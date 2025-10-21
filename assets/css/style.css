@@ -28,7 +28,7 @@ a:hover{text-decoration:underline}
 @media (max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
 .card h3{margin-top:0}
-.hero{padding:20px 0 10px}
+.hero{padding:30px 0 10px}
 .hero h2{font-size:40px;margin:6px 0 10px}
 .hero p{color:var(--muted);max-width:800px}
 .kv{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
