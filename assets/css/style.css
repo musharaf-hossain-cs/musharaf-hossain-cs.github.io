@@ -1,0 +1,100 @@
+
+html{scroll-behavior:smooth}
+:root{
+  --bg:#0b0d10;
+  --card:#12161b;
+  --muted:#9aa4b2;
+  --text:#e6edf3;
+  --brand:#6ea8fe;
+  --accent:#7ee787;
+  --border:#222831;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;position:sticky;top:0;background:linear-gradient(180deg,var(--bg),rgba(11,13,16,0.8));backdrop-filter:saturate(1.2) blur(6px);z-index:10;border-bottom:1px solid var(--border)}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{width:28px;height:28px;border-radius: 50%;}
+.brand h1{font-size:18px;margin:0}
+.nav a{margin-left:16px}
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;background:var(--brand);color:#081018;font-weight:600;border:1px solid transparent}
+.btn.secondary{background:transparent;border-color:var(--border);color:var(--text)}
+.btn:hover{filter:brightness(1.05)}
+.grid{display:grid;gap:18px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+.card h3{margin-top:0}
+.hero{padding:20px 0 10px}
+.hero h2{font-size:40px;margin:6px 0 10px}
+.hero p{color:var(--muted);max-width:800px}
+.kv{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+.kv span{padding:8px 12px;background:#0e1217;border:1px solid var(--border);border-radius:12px;color:var(--muted)}
+.section-title{display:flex;align-items:center;justify-content:space-between;margin:28px 0 8px}
+.list{list-style:none;padding:0;margin:0}
+.list li{padding:12px 0;border-bottom:1px dashed var(--border)}
+.list li:last-child{border-bottom:none}
+.small{font-size:14px;color:var(--muted)}
+.footer{margin:28px 0;color:var(--muted);text-align:center}
+.badge{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-weight:600;font-size:12px}
+.tag{display:inline-block;padding:6px 10px;background:#0e1217;border:1px solid var(--border);border-radius:999px;margin:4px 4px 0 0}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border-bottom:1px dashed var(--border);padding:10px;text-align:left;vertical-align:top}
+h2.section-anchor{scroll-margin-top:80px}
+
+.hero-split{display:grid;grid-template-columns:2fr 1fr;gap:24px;align-items:center}
+.hero-photo{display:flex;justify-content:center}
+.hero-photo img{width:100%;max-width:300px;border-radius:50%;border:1px solid var(--border);background:#0e1217}
+@media (max-width:900px){.hero-split{grid-template-columns:1fr}.hero-photo{order:-1}}
+.nav-links a{margin-left:16px}
+.card .tag {
+  background: #0e141a;
+  border-color: #2a323c;
+  color: var(--text);
+  font-size: 13px;
+  padding: 6px 10px;
+  margin: -10px -10px 0 0;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.timeline.single-col {
+  position: relative;
+  margin: 8px 0 32px;
+  padding-left: 32px;
+}
+.timeline.single-col::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  width: 2px;
+  background: var(--border);
+  opacity: 0.6;
+}
+.timeline.single-col .tl-item {
+  position: relative;
+  margin-bottom: 24px;
+}
+/* --- Timeline Dot Fix --- */
+.timeline.single-col .tl-dot {
+  position: absolute;
+  top: 20px;                 /* aligns with card title line */
+  left: -20px;                 /* pulls slightly inside the timeline line */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand);  /* matches your accent color */
+  border: 2px solid var(--bg); /* contrast ring for dark mode */
+  box-shadow: 0 0 6px var(--brand); /* soft glow for visibility */
+  z-index: 2;
+}
+
+.timeline.single-col .card {
+  margin-left: 20px;
+  box-shadow: 0 0 0 1px var(--border) inset;
+}
