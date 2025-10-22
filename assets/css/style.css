@@ -14,11 +14,11 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:
 a{color:var(--brand);text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:1000px;margin:0 auto;padding:24px}
-.nav{display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:var(--bg);box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;padding:16px;border-bottom:1px solid var(--border);z-index:10;}
+.nav{display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:var(--bg);box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;padding:16px 16px 16px 2px;border-bottom:1px solid var(--border);z-index:10;}
 .brand{display:flex;gap:12px;align-items:center}
 .brand img{width:28px;height:28px;border-radius: 50%;}
 .brand h1{font-size:18px;margin:0}
-.nav a{margin-left:16px}
+.nav a{margin-left:0px}
 .btn{display:inline-block;padding:6px 14px;border-radius:12px;background:var(--brand);color:#081018;font-weight:600;border:1px solid transparent}
 .btn.secondary{background:transparent;border-color:var(--border);color:var(--text)}
 .btn-success {
