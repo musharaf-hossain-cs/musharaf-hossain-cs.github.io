@@ -30,7 +30,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   const headerH = () => (headerEl ? headerEl.offsetHeight : 72);
 
   // 👇 your actual section IDs
-  const sectionIds = ['about', 'research', 'experience', 'projects', 'skills'];
+  const sectionIds = ['top', 'research', 'experience', 'projects', 'skills'];
 
   const sections = sectionIds
     .map(id => document.getElementById(id))
