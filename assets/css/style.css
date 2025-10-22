@@ -95,9 +95,9 @@ h2.section-anchor{scroll-margin-top:80px;color:#007f11}
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--brand);  /* matches your accent color */
+  background: var(--accent);  /* matches your accent color */
   border: 2px solid var(--bg); /* contrast ring for dark mode */
-  box-shadow: 0 0 6px var(--brand); /* soft glow for visibility */
+  box-shadow: 0 0 6px var(--accent); /* soft glow for visibility */
   z-index: 2;
 }
 
