@@ -50,7 +50,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   }
 
   function computeActiveId() {
-    const y = window.scrollY + headerH() + 8;
+    const y = window.scrollY + headerH() + 100;
     let current = sectionIds[0];
     for (const s of sections) {
       const top = s.getBoundingClientRect().top + window.scrollY;
