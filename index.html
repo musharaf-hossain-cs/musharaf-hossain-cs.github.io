@@ -7,8 +7,18 @@
   <title>Md. Musharaf Hossain • Portfolio</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
   <meta name="description"
     content="Portfolio of Md. Musharaf Hossain: Software Engineer in Dhaka, Bangladesh. Interests: Machine Learning, Computer Security.">
+
+    <style>
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body { font-size: 15px; line-height: 1.55; color: var(--text); background: var(--bg); }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+    </style>
+    
 </head>
 
 <body id="top">
@@ -18,14 +28,14 @@
       <h1>Md. Musharaf Hossain</h1>
     </div>
     <div class="nav-links">
-      <a href="#about" class="">About Me</a>
-      <a href="#research" class="">Research</a>
-      <a href="#experience" class="">Work</a>
-      <a href="#projects" class="">Projects</a>
-      <a href="#skills" class="">Skills</a>
-      <a href="resume.html" class="">Resume</a>
+      <a href="#about" class="navlink">About Me</a>
+      <a href="#research" class="navlink">Research</a>
+      <a href="#experience" class="navlink">Work</a>
+      <a href="#projects" class="navlink">Projects</a>
+      <a href="#skills" class="navlink">Skills</a>
+      <a href="resume.html" class="navlink">Resume</a>
       <a href="mailto:musharaf.hossain.cs@gmail.com" class="btn secondary">Email</a>
-      <a href="musharaf_resume.pdf" class="btn">Download CV</a>
+      <a href="musharaf_resume.pdf" class="btn btn-success">Download CV</a>
     </div>
   </div>
 
@@ -64,9 +74,9 @@
   <main class="container">
     <h2 class="section-title section-anchor" id="education">Education</h2>
     <div class="card">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-        <h3 style="margin: 0;">B.Sc. in CSE — BUET</h3>
-        <div class="small" style="text-align: right;">
+      <div class="inline-div">
+        <h3 class="inline-left">B.Sc. in CSE — BUET</h3>
+        <div class="small inline-right">
           Dhaka, Bangladesh • Apr 2018 – May 2023 • CGPA 3.80/4.00
         </div>
       </div>
@@ -94,10 +104,14 @@
     </div>
 
     <h2 class="section-title section-anchor" id="research">Research Experience</h2>
-    <div class="grid grid-3">
+    <div class="">
       <div class="card">
-        <h3>Role-Based LLM Agents for Automated Software Engineering</h3>
-        <div class="small">Qatar Computing Research Institute (QCRI)</div>
+        <div class="inline-div">
+          <h3 class="inline-left">Role-Based LLM Agents for Automated Software Engineering</h3>
+          <div class="small inline-right">
+            Qatar Computing Research Institute (QCRI)
+          </div>
+        </div>
         <p style="text-align: justify;">
           This research at the Qatar Computing Research Institute (QCRI) explores large language model (LLM)–driven
           autonomous agents for automated software debugging and repair. The project evaluates frameworks such as
@@ -107,10 +121,14 @@
           engineering workflows.
         </p>
       </div>
-
+      <br>
       <div class="card">
-        <h3>Effect of Smile on Facial Landmark Based Face Recognition</h3>
-        <div class="small">IEEE SMC 2023 • Oahu, Hawaii</div>
+        <div class="inline-div">
+          <h3 class="inline-left">Effect of Smile on Facial Landmark Based Face Recognition</h3>
+          <div class="small inline-right">
+            IEEE SMC 2023 • Oahu, Hawaii
+          </div>
+        </div>
         <p style="text-align: justify;">
           This research is about investigating the impact of smiles on facial landmark-based face recognition accuracy,
           particularly using traditional machine learning techniques. The study proposes some novel smile-based features
@@ -127,10 +145,14 @@
           </a>
         </p>
       </div>
-
+      <br>
       <div class="card">
-        <h3>TroBot: Trojan Attack Using Chatbot</h3>
-        <div class="small">Cybersecurity Study</div>
+        <div class="inline-div">
+          <h3 class="inline-left">TroBot: Trojan Attack Using Chatbot</h3>
+          <div class="small inline-right" style="text-align: right;">
+            Cybersecurity Study
+          </div>
+        </div>
         <p style="text-align: justify;">
           This controlled cybersecurity study examines installer-based social engineering threats targeting AI chatbot
           users. Implemented a Nim-compiled reverse-shell payload within a functional chatbot installer and evaluated
