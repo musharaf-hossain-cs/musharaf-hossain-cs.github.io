@@ -44,7 +44,8 @@ a:hover{text-decoration:underline}
 .list li:last-child{border-bottom:none}
 .small{font-size:14px;color:var(--muted)}
 .footer{margin:28px 0;color:var(--muted);text-align:center}
-.badge{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:#053d14 !important;font-weight:600;font-size:12px;background: #bcedbc;}
+.badge{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:#02691e;font-weight:600;font-size:12px;}
+.navlink.badge{background:#bcedbc;color:#053d14 !important;}
 .tag{display:inline-block;padding:6px 10px;background:#f3f4f6;border:1px solid var(--border);border-radius:999px;margin:4px 4px 0 0}
 .table{width:100%;border-collapse:collapse}
 .table th,.table td{border-bottom:1px dashed var(--border);padding:10px;text-align:left;vertical-align:top}
